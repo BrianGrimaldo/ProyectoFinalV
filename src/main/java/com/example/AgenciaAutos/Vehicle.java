@@ -5,8 +5,8 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.Data;
 
-@Document(collection = "Vehiculos")
 @Data
+@Document(collection = "Vehiculos")
 public class Vehicle {
     @Id
     private ObjectId id;
@@ -15,8 +15,4 @@ public class Vehicle {
     private int año; 
     private double precio;
     private String status;
-    public Object findAll() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'findAll'");
-    } 
 }

@@ -28,11 +28,10 @@ public class VehiculoController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    
+
     @PostMapping("/Crear")
-    public ResponseEntity<Vehicle> saveSong(@RequestBody Vehicle vehicle) {
-        Vehicle savedVehicle = vehicleService.save(vehicle);
-        return new ResponseEntity<>(savedVehicle, HttpStatus.CREATED);
+    public ResponseEntity<Vehicle> saveVehicle(@RequestBody Vehicle vehicle) {
+        return new ResponseEntity<>(vehicleService.save(vehicle), HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")

@@ -13,12 +13,4 @@ public class Cliente {
     private String lastName;
     private String email;
     private String phoneNumber;
-    public Object getNombre() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getNombre'");
-    }
-    public void setNombre(Object nombre) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setNombre'");
-    }
 }
